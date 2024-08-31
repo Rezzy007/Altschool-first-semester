@@ -1,0 +1,940 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+#header {
+    background-color: #1258AF;
+    position: fixed;
+    margin: 0 auto;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.nav-bar {
+    padding: 1.5rem 0;
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 1rem 0;
+    margin: 0 auto;
+}
+
+.nav-bar li:not(:last-child) {
+    margin-right: 4rem;
+}
+
+.nav-bar a {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.nav-bar a:hover {
+    color: #035EDC;
+    background-color: #FDF6EC;
+    padding: 1rem;
+    border-radius: 7px;
+    border: 1px solid #035EDC;
+}
+
+body {
+    background-color: #FDF6EC;
+}
+
+
+#main {
+    max-width: 80rem;
+    margin: 0 auto;
+    margin-top: 10rem;
+}
+
+.one h1{
+    font-size: 3rem;
+    display: inline-block;
+    border-bottom: 5px dotted #E9AD58;
+}
+
+.section:not(:last-child) {
+    margin-block-end: 1rem;
+}
+
+.section {
+    padding: 0 1.5rem 1.5rem;
+    font-size: 1.6rem;
+}
+
+.one p {
+    padding-block-start: 2rem;
+}
+
+.list p {
+    padding-block-end: .7rem;
+}
+
+.list ol {
+    list-style: none;
+}
+
+.list ol li:not(:last-child) {
+    padding-block-end: 1.5rem;
+}
+
+.list span {
+    display: block;
+}
+
+.list .bold-span {
+    font-weight: 600;
+    padding-block-end: .2rem;
+}
+
+.interests > h2 {
+    font-size: 2.6rem;
+    margin-block-end: .5rem;
+}
+
+.interests ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.interests > ul li:not(:last-child) {
+    margin-block-end: .5rem;
+}
+
+.interests > p {
+    padding-block-start: 2rem;
+    padding-block-end: 2rem;
+}
+
+.interests > p > a, 
+.one > p > a,
+.section-form div > p > a, 
+.section-form p > a {
+    text-decoration: none;
+    color: #035EDC;
+    cursor: pointer;
+}
+
+.footer p {
+    margin-block-end: 1rem;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+
+/* Back-to-top button needs fixing */
+#main > .bt-top-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    font-size: 1.6rem;
+    bottom: 1.5rem;
+}
+
+#main .bt-top-btn > a[href="#header"] {
+    text-decoration: none;
+    background-color: #035EDC;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+}   /* Back-to-top Button ends here */
+
+
+
+/* Responsive design */
+/* small screens */
+@media screen and (max-width: 480px) { 
+    .nav-bar {
+        padding: 0;
+    }
+
+    .nav-bar ul {
+        flex-direction: column;
+    }
+
+    .nav-bar li {
+        margin-bottom: 1rem;
+    }
+    
+    .nav-bar li:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+   .nav-bar a {
+        font-size: 1.4rem;
+    }
+
+    #main {
+        padding-top: 8rem;
+        line-height: 2.2rem;
+    }
+
+    .one h1 {
+        padding-block-start: 4rem;
+        padding-block-end: .8rem;
+        font-size: 2.6rem;
+    }
+
+    .section:not(:last-child) {
+        margin-block-end: 0;
+    }
+
+    .section {
+        font-size: 1.4rem;
+        padding: 0 2rem 1.5rem;
+    }
+
+    .interests > h2 {
+        font-size: 2rem;
+        margin-block-end: .2rem;
+    }
+
+    #main > .bt-top-btn {
+        font-size: 1.4rem;
+        bottom: 1.2rem;
+    }
+
+    #main > .bt-top-btn > a[href="#header"] {
+        padding: 8px 15px;
+        border-radius: 5px;
+    }
+
+    .interests > p {
+        padding-block-end: 0;
+    }
+
+    .footer p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+   .nav-bar li:not(:last-child) {
+        margin-right: 1rem;
+    }
+    
+    .nav-bar a {
+        font-size: 1.4rem;
+        padding: .5rem;
+    }
+
+    .section {
+        padding: 0 4rem 1.5rem;
+    }
+
+    .one h1 {
+        font-size: 2.8rem;
+        padding-block-start: 1rem;
+    }
+}
+
+
+/* Form.html */
+.section-form, form {
+    padding: 0 1.5rem 1.5rem;
+}
+
+.section-form > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block-end: 2rem;
+}
+
+.section-form h1 {
+    font-size: 3rem;
+}
+
+.section-form h2 {
+    font-size: 2.6rem;
+}
+
+.section-form p, form {
+    font-size: 1.6rem;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    padding: 1rem 1rem 1rem 0;
+    width: 100%;
+}
+
+.column>div {
+   margin-block-end: 1.3rem;
+}
+
+.column>div>label {
+    display: block;
+    margin-bottom: .2rem;
+}
+
+.column>div>input,
+.column>div>select {
+    width: 95%;
+    height: 3.5rem;
+    border: 1px solid #2a2222;
+    outline: none;
+    border-radius: 3px;
+}
+
+.column > div > input::placeholder,
+.column > div > select, input[type="date"] {
+    color: #8e8080;
+    padding-inline-start: 1rem;
+    font-size: 1.6rem;
+}
+
+.column>div>input:focus,
+.column>div>select:focus, 
+.game form #clubs {
+    border: 1px solid #035EDC;
+    box-shadow: 0 0 5px rgba(3, 94, 220, 0.5);
+    padding-inline: 1rem;
+    font-size: 1.6rem;
+}
+
+#main>form>button[type="submit"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    max-width: 300px;
+    background-color: #035EDC;
+    color: #FDF6EC;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px auto;
+    font-size: 1.8rem;
+    margin-block-start: 1.5rem;
+}
+
+/* signup form */
+.signup h2 {
+    padding-block-start: 2rem;
+}
+
+.signup-input > div {
+    margin-block-end: unset;
+}
+
+/* login form responsiveness*/
+
+@media screen and (max-width: 480px) {
+    .section-form,
+    .form-wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .section-form>div {
+        flex-direction: column;
+        padding-block-end: 3rem;
+    }
+
+    .section-form  {
+        padding-block-start: 3rem;
+    }
+
+    .section-form > div > h1 {
+        font-size: 2.6rem;
+        padding-block-end: 1.5rem;
+    }
+    .section-form > h2 {
+        font-size: 2rem;
+        padding-block-end: 1rem;
+    }
+    .section-form > p, 
+    form > p,
+    form[action=""],
+    .column>div>input::placeholder,
+    .column>div>select,
+    input[type="date"] {
+        font-size: 1.4rem;
+    }
+
+    .form-wrapper {
+        padding-block-end: 1rem;
+    }
+
+    #main > form > button[type="submit"] {
+        margin-block-start: 3rem;
+        font-size: 1.4rem;
+        width: 100%;
+    }
+    .column>div>input,
+    .column>div>select {
+        width: 100%;
+    }
+}
+
+/* Medium screens */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .section-form {
+        padding-block-start: 2rem;
+    }
+
+    .section-form>div {
+        flex-direction: column;
+        padding-block-end: .5rem;
+    }
+
+    .section-form>div>h1 {
+        font-size: 2.8rem;
+        padding-block-end: .5rem;
+    }
+
+    .section-form>h2 {
+        font-size: 2.4rem;
+        padding-block-end: 0;
+    }
+
+    .column>div>input::placeholder,
+    .column>div>select,
+    input[type="date"] {
+        font-size: 1.4rem;
+    }
+
+    .section-form>p,
+    form>p,
+    form[action=""] {
+        font-size: 1.5rem;
+    }
+
+    #main>form>button[type="submit"] {
+        font-size: 1.5rem;
+        margin-block-start: 3rem;
+    }
+}
+
+
+/* Table.html */
+#table-body {
+    background-image: url(Assets/Altsch-logo-black.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-block-start: 3rem;
+    padding-block-end: 3rem;
+}
+
+.table-container {
+    max-width: 90rem;
+    padding: 2rem;
+    margin: 0 1.2rem;
+    font-size: 1.6rem;
+    background: #fff;
+    opacity: .9;
+}
+
+.table-container table {
+    border-collapse: collapse;
+}
+
+.table-container  caption {
+    padding: 2rem 1.2rem;
+}
+
+.table-container table th,
+.table-container table td,
+.table-container table tr {
+    padding: 1rem;
+}
+
+.table-container table tr {
+    border-bottom: 5px double #035EDC;
+    border-top: 3px solid #cf2424;
+    border-left: 3px solid #1cc655;
+    border-right: 3px solid #988e8e;
+}
+
+.table-container table td,
+.table-container table .theading {
+    border-left: 3px solid #988e8e;
+}
+
+.table-container p {
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Table responsiveness */
+/*small screens */
+@media screen and (max-width: 480px) {
+    .table-container {
+        font-size: 1.4rem;
+    }
+}
+
+/* media.html */
+#media {
+    background-color: rgba(16, 14, 13, 0.9);
+}
+
+#media-page {
+    max-width: 120rem;
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+}
+
+.media-section {
+    margin-block-end: 2rem;
+    padding: 3rem 0;
+}
+
+.section1 {
+    background-image: url(Assets/workspace.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    color: #fff;
+    margin-block-start: 10rem;
+}
+
+.section1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.72);
+}
+
+.section1 > p {
+    text-align: center;
+    padding-block-end: 2rem;
+    padding-inline: 1rem;
+    position: relative;
+}
+
+.section1-pic-descrp {
+    background: #fff;
+    border-radius: 5px;
+    opacity: .95;
+}
+
+.section1-pic-descrp p {
+    padding-block-end: 1.2rem;
+    color: #2a2222;
+}
+
+.section1-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.section1-pic-descrp {
+    max-width: fit-content;
+}
+
+.section1-flex .section1-img, .section1-flex .section1-pic-descrp {
+    padding: 1rem;
+}
+
+.section1-img, .section1-pic-descrp {
+    margin-inline: 1rem;
+}
+
+.section1-img img {
+    width: 30rem;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.favorites {
+    background-image: url(Assets/waterfall2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-block-start: 2.5rem;
+    padding-inline: 1rem;
+}
+
+.favorites::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31, 19, 11, 0.4);
+    
+}
+
+.favorites h2 {
+    text-align: center;
+    padding-block-end: 2rem;
+    color: #fff;
+    position: relative;
+}
+
+.fav-flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-block-end: 1rem;
+    padding-block-end: 3rem;
+    border-bottom: 3px solid #2a2222;
+    background-color: #fff;
+    margin-inline: 1rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.fav-flex table {
+    border-collapse: collapse;
+    margin-inline: 1rem;
+    position: relative;
+}
+
+.fav-flex table caption {
+    margin-block-start: 2rem;
+}
+
+.fav-flex table .t-left {
+    border-left: 3px solid #988e8e;
+}
+
+.fav-flex table tr {
+    border-bottom: 5px double #035EDC;
+    border-top: 3px solid #cf2424;
+    border-left: 3px solid #1cc655;
+    border-right: 3px solid #1cc655;
+}
+
+.words-descrp {
+    position: relative;
+    border-top: 4px solid #1258AF;
+    border-left: 4px solid #cf2424;
+    border-right: 4px solid #1cc655;
+    border-bottom: 4px solid #988e8e;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border-top-width: 2rem;
+    padding: 1rem;
+    margin-inline: 1rem;
+}
+
+.words-descrp h3 {
+    padding-block-end: 1.5rem;
+}
+
+.words-descrp ul {
+    list-style: none;
+}
+
+.words-descrp ul li {
+    padding-block-end: .3rem;
+}
+
+.fav-flex table > caption {
+    padding: 1rem 0;
+}
+
+.fav-flex table th, .fav-flex table td {
+    padding: 1rem;
+}
+
+.fav-flex table tr {
+    text-align: center;
+}
+
+.fav-colors {
+    text-align: center;
+    margin-block-start: 5rem;
+    position: relative;
+    color: #fff;
+    background: rgba(31, 19, 11, 0.4);
+    margin-inline: 5rem;
+    padding-block-start: 2rem;
+    padding-block-end: 2rem;
+    border-radius: 10px;
+}
+
+.fav-colors p {
+    padding: 1rem 0 2rem;
+    margin-inline: 2rem;
+}
+
+.fav-img img {
+    width: 53.5rem;
+    height: 32rem;
+    border-radius: 10px;
+}
+
+.game {
+    background-image: url(Assets/EPL-logo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+    padding-inline: 1rem;
+}
+
+.game::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(253, 246, 236, 0.9);
+}
+
+.game p, .game form {
+    max-width: 90rem;
+    margin: 0 auto;
+    text-align: left;
+    padding-block-end: 2rem;
+    position: relative;
+}
+
+.game video {
+    width: 70%;
+    height: auto;
+    margin-block-end: 3rem;
+    position: relative;
+}
+
+.game form label {
+    display: block;
+    padding-block-end: .3rem;
+}
+
+.game form #clubs {
+    width: 50%;
+    height: 3.5rem;
+    border: 1px solid #2a2222;
+    outline: none;
+    border-radius: 3px;
+}
+
+.game form #submit { 
+    background-color: #035EDC;
+    color: #FDF6EC;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+.game iframe {
+    width: 70%;
+    height: 40rem;
+    padding-block-end: 3rem;
+    position: relative;
+}
+
+.game .audio-player {
+    margin-inline: 2rem;
+    padding: 2rem;
+    background-color: #2a2222;
+    position: relative;
+}
+
+.game audio {
+    width: 70%;
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#media .footer {
+    color: #fff;
+    position: relative;
+}
+
+/* media responsiveness */
+/* small screen */
+@media screen and (max-width: 480px) {
+    #media-page {
+        font-size: 1.4rem;
+    }
+
+    .section1-flex, .fav-flex {
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .section1-img img {
+        width: 20rem;
+        padding-block-end: .5rem;
+    }
+
+    .favorites {
+        padding-block-start: 1rem;
+    }
+
+    .fav-flex table {
+        margin-block-end: 3rem;
+    }
+
+    .fav-flex table th,
+    .fav-flex table td {
+        padding: .5rem;
+    }
+
+    .fav-colors p {
+        padding-inline: 1rem;
+    }
+
+    .fav-img img {
+        width: 26.75rem;
+        height: 16rem;
+    }
+
+    .game p, .game form {
+        padding-block-end: .7rem;
+    }
+
+    .game form #clubs, .game form #submit {
+        width: 100%;
+        margin-block-start: 1rem;
+    }
+
+    .game video, .game iframe {
+        width: 100%;
+        height: 20rem;
+        padding-block-end: 0;
+        margin-block-end: 1.2rem;
+    }
+
+    .game .audio-player, .fav-flex, .fav-colors, .game .audio-player {
+        margin-inline: 0;
+    }
+
+    .game .audio-player {
+        padding: 1rem;
+    }
+
+    .game audio {
+        width: 100%;
+    }
+
+    .section1-flex .section1-img,
+    .section1-flex .section1-pic-descrp {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    #media-page {
+        font-size: 1.5rem;
+    }
+
+    .section1-flex, .fav-flex {
+        flex-direction: column;
+    }
+
+    .section1-img img {
+        width: 30rem;
+        padding-block-end: .5rem;
+    }
+
+    .favorites {
+        padding-block-start: 1rem;
+    }
+
+    .fav-flex table {
+        margin-block-end: 3rem;
+    }
+
+    .fav-flex table th,
+    .fav-flex table td {
+        padding: .8rem;
+    }
+
+    .fav-colors p {
+        padding-inline: 1.5rem;
+    }
+
+    .fav-img img {
+        width: 35.7rem;
+        height: 21rem;
+    }
+
+    .game p,
+    .game form {
+        padding-block-end: 2rem;
+    }
+    
+    .game form {
+        padding-inline: 5rem;
+        
+    }
+
+    .game form #clubs,
+    .game form #submit {
+        width: 100%;
+        margin-block-start: 1rem;
+    }
+
+    .game video,
+    .game iframe {
+        width: 100%;
+        height: 30rem;
+        padding-block-end: 0;
+        margin-block-end: 1rem;
+    }
+
+    .game .audio-player,
+    .fav-flex,
+    .fav-colors,
+    .game .audio-player {
+        margin-inline: 0;
+    }
+
+    .game .audio-player {
+        padding: 1.5rem;
+    }
+
+    .game audio {
+        width: 90%;
+    }
+
+    .section1-flex .section1-img,
+    .section1-flex .section1-pic-descrp {
+        width: 100%;
+    }
+}

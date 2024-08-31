@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media - About Me</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body id="media">
+    <header id="header">
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="form.html">AltSchool Signup</a></li>
+          <li><a href="table.html">Courses offered in AltSchool</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="media-page">
+      <section class="section1 media-section">
+        <p>
+          Hi, my name is Orezi. A student at the School of Engineering,
+          AltSchool Africa.
+        </p>
+        <div class="section1-flex">
+          <div class="section1-img">
+            <img
+              src="/Assets/AI_Photo_Large.jpg"
+              alt="An AI Photo"
+              title="An AI Photo"
+            />
+          </div>
+          <div class="section1-pic-descrp">
+            <p>
+              I am learning how to build websites and applications using web
+              technologies such as HTML, CSS and Javascript.
+            </p>
+            <p>
+              My goal is to use this knowledge to enhance user experience when
+              interacting with websites and web applications.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="favorites media-section">
+        <h2>My Favorites</h2>
+        <div class="fav-flex">
+          <table border="1">
+            <caption>
+              These are some of the things I enjoy
+            </caption>
+            <tr>
+              <th>Food</th>
+              <th class="t-left">I love to</th>
+              <th class="t-left">Movie</th>
+            </tr>
+            <tr>
+              <td>Fried Rice</td>
+              <td class="t-left">Sing</td>
+              <td class="t-left">Action Movies</td>
+            </tr>
+            <tr>
+              <td rowspan="2">Jollof Rice</td>
+              <td rowspan="2" class="t-left">Admire Nature</td>
+              <td class="t-left">Comedy</td>
+            </tr>
+            <tr>
+              <td class="t-left">Epic Movies</td>
+            </tr>
+            <tr>
+              <th>Sport</th>
+              <th class="t-left">Book</th>
+              <th class="t-left">School Subject</th>
+            </tr>
+            <tr>
+              <td>Football</td>
+              <td rowspan="3" class="t-left">
+                <i>As a Man Thinketh</i> by James Allen
+              </td>
+              <td rowspan="3" class="t-left">Biology</td>
+            </tr>
+            <tr>
+              <td>Track Events</td>
+            </tr>
+            <tr>
+              <td>Swimming</td>
+            </tr>
+          </table>
+          <div class="words-descrp">
+            <h3>A few words that describe me</h3>
+            <ul>
+              <li>Kind</li>
+              <li>Smart</li>
+              <li>Strong</li>
+              <li>Responsible</li>
+              <li>A good listener</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="fav-colors">
+          <h3>My favorite Colors</h3>
+          <p>
+            These are my favorite colors in one picture. I love to keep a
+            simple, minimalistic style in everything.
+          </p>
+          <div class="fav-img">
+            <img
+              src="/Assets/Interior-L.jpg"
+              alt="My favorite colors"
+              title="Interior Decoration"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="game media-section">
+        <p>
+          If you enjoy a game of football like I do, you should know that in the
+          history of the English Premier League (EPL), Manchester City became
+          the first to win the Premier League four times consecutively. With one
+          game to go, Manchester City having 88 points and Arsenal having 86
+          points, the final day of the EPL 2023/24 season had fans from both
+          sides constantly and nervously checking their phones for live scores
+          as the outcome of the game would determine the winner.
+        </p>
+        <p>
+          The video below highlights their performance, and how the season
+          ended.
+        </p>
+        <video controls autoplay loop muted preload="auto">
+          <source src="/Assets/EPL2023.mp4" type="video/mp4" />
+          <source src="/Assets/EPL2023.webm" type="video/webm" />
+          Your browser does not support the Video tag.
+        </video>
+        <p>
+          Interesting right? As the new EPL season begins on the 15th August
+          2024,
+        </p>
+        <form action="">
+          <label for="clubs">whom do you predict would win the title?</label>
+          <input list="EPL_Clubs" id="clubs" name="clubs" />
+          <datalist id="EPL_Clubs">
+            <option value="Manchester City"></option>
+            <option value="Manchester United"></option>
+            <option value="Arsenal"></option>
+            <option value="Liverpool"></option>
+            <option value="Chelsea"></option>
+          </datalist>
+          <input type="submit" value="Submit" name="submit" id="submit" />
+        </form>
+
+        <p>
+          As the season begins, I recommend checking out the latest news about
+          the EPL. The
+          <a href="https://www.premierleague.com/"
+            ><mark>official Premier League website</mark></a
+          >
+          has a section dedicated to highlights and news from the season, and if
+          you want to have fun where you get to choose your squad and play
+          against friends and family, you can check out the
+          <a href="https://fantasy.premierleague.com/"
+            ><mark>Fantasy Premier League.</mark></a
+          >
+          If you want to see more videos, you can check out the Premier League
+          official YouTube channel below for interesting videos and updates.
+        </p>
+        <iframe
+          src="https://www.youtube.com/embed/Cv8SjX9AdKY"
+          title="Ultimate Guide to the 2024/25 Premier League Season"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+
+        <p>
+          Ready to be thrilled? Now stand up, put your right palm on your chest
+          and sing along with me.
+        </p>
+        <div class="audio-player">
+          <audio
+            controls
+            preload="auto"
+            loop
+            muted
+            title="The UEFA Champions Anthem"
+          >
+            <source
+              src="/Assets/UEFA Champions League Anthem.mp3"
+              type="audio/mpeg"
+            />
+            <source
+              src="/Assets/UEFA Champions League Anthem.ogg"
+              type="audio/ogg"
+            />
+            <source
+              src="/Assets/UEFA Champions League Anthem.wav"
+              type="audio/wav"
+            />
+            Your browser does not support the audio tag.
+          </audio>
+        </div>
+      </section>
+      <footer class="footer">
+        <p>&COPY;2021 AltSchool Africa. All rights reserved.</p>
+      </footer>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Altschool - Registration Form</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <header id="header">
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="form.html">AltSchool Signup</a></li>
+          <li><a href="table.html">Courses offered in AltSchool</a></li>
+        </ul>
+      </nav>
+  </header>
+  
+  <main id="main">
+      <section class="section-form">
+        <div>
+          <h1>Alt&#95; School</h1>
+          <p>Already an AltSchooler? <a href="form2.html">Sign in!</a></p>
+        </div>
+        <h2>Signup</h2>
+        <p class=>Take the next steps to apply at AltSchool Africa</p>
+      </section>
+
+      <form action="">
+        <div class="form-wrapper">
+          <div class="column">
+            <div>
+              <label for="firstname">First Name</label>
+              <input
+                type="text"
+                id="firstname"
+                name="firstname"
+                placeholder="Enter first name"
+                required
+              />
+            </div>
+            <div>
+              <label for="lastname">Last Name</label>
+              <input
+                type="text"
+                id="lastname"
+                name="lastname"
+                placeholder="Enter last name"
+                required
+              />
+            </div>
+            <div>
+              <label for="gender">Gender</label>
+              <select name="gender" id="gender">
+                <option value="">Select gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </div>
+            <div>
+              <label for="dob">Date of Birth</label>
+              <input type="date" id="dob" name="dob" required />
+            </div>
+            <div>
+              <label for="phone_number">Phone Number</label>
+              <input
+                type="tel"
+                id="phone_number"
+                name="phone_number"
+                maxlength="11"
+                placeholder="08154387000"
+                required
+              />
+            </div>
+          </div>
+          <div class="column">
+            <div>
+              <label for="country">Country</label>
+              <select name="country" id="country">
+                <option value="">Select your country</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Kenya">kenya</option>
+                <option value="Ghana">Ghana</option>
+              </select>
+            </div>
+            <div>
+              <label for="state_of_residence">State/City of Residence</label>
+              <input
+                type="tel"
+                id="state_of_residence"
+                name="state_of_residence"
+                placeholder="Enter your state of residence"
+              />
+            </div>
+            <div>
+              <label for="socials">How did you hear about us?</label>
+              <select name="socials" id="socials">
+                <option value="">Select channel</option>
+                <option value="twitter">Twitter</option>
+                <option value="facebook">Facebook</option>
+                <option value="youtube">Youtube</option>
+                <option value="linkedin">Linkedin</option>
+                <option value="friend">Friend</option>
+                <option value="whatsapp">Whatsapp</option>
+                <option value="instagram">Instagram</option>
+                <option value="bill_board">Bill Board</option>
+                <option value="sales_officer">Sales Officer</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter Password"
+                required
+              />
+            </div>
+            <div>
+              <label for="confirm_password">Confirm Password</label>
+              <input
+                type="password"
+                id="confirm_password"
+                name="confirm_password"
+                placeholder="Enter password again"
+                required
+              />
+            </div>
+          </div>
+        </div>
+
+        <p>
+          By clicking continue, I agree to <a href="#">Terms of Use</a> and
+          acknowledge that I have read the <a href="#">Privacy Policy</a>.
+        </p>
+
+        <button type="submit" id="submit" name="submit" value="submit">
+          Submit
+        </button>
+      </form>
+    </main>
+  </body>
+</html>
