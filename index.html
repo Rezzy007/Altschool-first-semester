@@ -6,7 +6,7 @@
     <title>Altschool - About Me</title>
     <link rel="stylesheet" href="index.css" />
   </head>
-  <body>
+  <body id="home-page">
     <header id="header">
       <nav class="nav-bar">
         <ul>
@@ -18,6 +18,14 @@
       </nav>
     </header>
     <main id="main">
+      <nav aria-label="Breadcrumb" class="breadcrumb">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#choice">Choice</a></li>
+          <li><a href="#interests">Interests</a></li>
+        </ul>
+      </nav>
+      
       <section class="section one">
         <h1>About Me</h1>
         <p>
@@ -32,7 +40,7 @@
           responsive and attractive websites!
         </p>
       </section>
-      <section class="section list">
+      <section class="section list" id="choice">
         <p>Want to know why I chose AltSchool Africa? Here are some reasons:</p>
         <ol>
           <li>
@@ -98,7 +106,7 @@
           AltSchool Africa.
         </p>
       </section>
-      <section class="section interests">
+      <section class="section interests" id="interests">
         <h2>Interests</h2>
         <ul>
           <li>Reading</li>
